@@ -7,9 +7,9 @@
     <title>
         {% block title %}
             Django App
-        {% endblock%}
+        {% endblock %}
     </title>
-    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
@@ -18,11 +18,12 @@
             <span role="img" aria-label="Home">🏠</span>
         </a> | 
         <a href="/about">
-            <span role="img" aria-label="about">😀</span>
+            <span role="img" aria-label="About">😀</span>
         </a> | 
         <a href="{% url 'posts:list' %}">
-            <span role="img" aria-label="Home">📰</span>
-        </a>
+            <span role="img" aria-label="Posts">📰</span>
+
+            </a>
     </nav>
     <main>
         {% block content %}

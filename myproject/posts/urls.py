@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 
-#app page name
 app_name = 'posts'
 
 urlpatterns = [
